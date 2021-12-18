@@ -21,7 +21,7 @@
 
 
 //---------------------------------------------------------------------------------------------------------------------------------------------
-		-- My_GitHub_repo: https://github.com/Shahed-Chy-Suzan/property-listing
+		-- My_GitHub_repo: https://github.com/Shahed-Chy-Suzan/tailwind-blog
 //---------------------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -66,9 +66,30 @@
 
 
 
+	//-- ekn amra font awesome er CDN link koriyechi index.html file e, then google font theke 2ta font "poppins" & "roboto" select kore ene CDN ta tao index.html e paste korechi, Now font er j css ta chilo(font-family: 'Poppins', sans-serif;
+	font-family: 'Roboto', sans-serif;) ota k amader k tailwind.config.js e theme er extend e fontFamily te array akare  bole dithe hobe, mane amra ekn font ta use korar jonno amader "tailwind.config.js" e jabo okhane likbo: 
+							//---------------------------------- tailwind.config.js -------------------------------------
+										module.exports = {
+											content: ['*.html',	],
+												  theme: {
+														extend: {
+															  fontFamily:{
+																	'poppins': ['Poppins', 'sans-serif'],
+																	'roboto': ['Roboto', 'sans-serif']
+															  }
+														},
+												  },
+											plugins: [],
+										}
 
-
-
+	-- ekn ei "poppins" & "roboto" name e amra class peye jabo amader html file e, ekn amra jodi amader ei font 2ta use korte chai taile amra html file e giye likbo: 
+						//--------------------------------- index.html --------------------------------------
+								  <h1 class="font-roboto">			//ekhane 'roboto' ta amara tailwind.config.js file e font er array er  j name ta diyechi oitai
+										Hello world!
+								  </h1>
+								  <h1 class="font-poppins">			//ekhane 'poppins' ta amara tailwind.config.js file e font er array er  j name ta diyechi oitai
+										Hello world!
+								  </h1>
 
 
 
