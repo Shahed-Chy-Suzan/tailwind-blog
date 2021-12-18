@@ -1,0 +1,81 @@
+//======================================================================================
+					******	Project Name :  Design a Blog with Tailwind CSS in Bangla	*******
+										-- From	 	  : Programming Kit
+//======================================================================================
+
+
+
+
+
+
+
+
+//----------------------------------------------------------------------------------------------------------------------------------------------------------
+				//-------------- Resources of Owner --------------
+						-- YouTube_playlist : https://www.youtube.com/playlist?list=PLzBl445W4ietiXaqMk8_-XCPUQAGR2iaZ
+						-- GitHub_Repo: https://github.com/rslahmed/Tailblog
+//---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+//---------------------------------------------------------------------------------------------------------------------------------------------
+		-- My_GitHub_repo: https://github.com/Shahed-Chy-Suzan/property-listing
+//---------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+//==========================================================================================================================
+											------------------ Start Project -----------------------
+//==========================================================================================================================
+		//-- ei project e amra ja ja use korbo : 
+					-- 1 -- tailwind process korar jonno 'PostCss', Link: https://postcss.org/
+					-- 1 -- tailwind locally install er jonno "vite" (frontend building tool hisebe), Link: https://vitejs.dev/
+					-- 2 -- Icon er jonno "fontawesome", Link: https://fontawesome.com/
+					-- 1 -- font er jonno "googlefont", Link: https://fonts.google.com/
+
+
+
+		//------------------------------------------------ Start Installation --------------------------------------------------------
+					-- npm init -y																				//will create a ''package.json' file
+					-- npm install -D tailwindcss postcss autoprefixer vite
+					-- npx tailwindcss init -p															//postcss.config.js + tailwind.config.js file create
+					-- created 'index.html' file in project root
+					-- created 'style.css' file in project root
+										@tailwind base;
+										@tailwind components;
+										@tailwind utilities;
+					-- in package.json ----------
+								  "scripts": {
+										"dev": "vite"						//------------
+									},
+					-- in tailwind.config.js ----------
+									module.exports = {
+										  content: ['*.html',	],		//-------------------
+										  theme: {
+											extend: {},
+										  },
+										  plugins: [],
+									}
+
+					-- npm run dev				//project run korar jonno, http://localhost:3000/ e site run hobe
+					
+					-- amra jeheto ekhane 'vite' server use kortechi tai eta live update hobe.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
